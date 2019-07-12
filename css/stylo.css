@@ -1,0 +1,202 @@
+/*------CONSIDERACIONES GENERALES---------*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
+
+
+*{margin:0; padding:0px; box-sizing: border-box; font-family: 'Dancing Script', cursive;}
+
+body{
+  margin-left: 10%;
+  margin-right: 10%;
+  background: #02010a;
+}
+
+/*---------   H E A D E R ---------*/
+
+.encabezado{
+  width: 100%;
+  padding-left: 10px;
+  top:0;
+  left:0;
+  background: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  overflow: hidden;
+}
+.contenido{
+  widht: 90%;
+  max-width: 1180px;
+  margin: auto;
+  overflow: hidden;
+}
+.titulo{
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 4px 4px 0px #02010a;
+  line-height: 70px;
+  float: left;
+}
+nav{
+  text-shadow: 4px 4px 0px #02010a;
+  float: right;
+  line-height: 70px;
+}
+nav a{
+  display: inline-block;
+  color: #fff;
+  text-decoration:none;
+  padding: 10px 10px;
+  line-height: normal;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition:all 500ms ease;
+  -o-transition:all 500ms ease;
+  transition:all 500ms ease;
+}
+header nav a:hover{
+  background: #3F51B5;
+  border-radius: 15px;
+}
+/*---------IMAGENES CENTRALES DE RETRATOS--------*/
+
+
+.galeria{
+  background: #d5c75f;
+  margin: 0px;
+  padding: 0px;
+}
+.galery{
+  width: 97%;
+  margin: auto;
+  padding: 20px;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.galery img{
+  width: 250px;
+  height: 200px;
+}
+.imretratoone{
+  margin-bottom: 20px;
+  filter: blur(10px);
+}
+.imretratotwo{
+  filter: grayscale(100%);
+}
+.imretratothree{
+  filter: sepia(90%);
+}
+.imretratofour{
+  filter: grayscale(100%);
+}
+.imretratosix{
+  filter: grayscale(100%);
+}
+
+/*-----------PIE  DE  PAGINA------*/
+
+.pie-pagina{
+  margin: auto;
+  background: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+  padding: 5%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+
+}
+ul{
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 30px;
+}
+.iconos{
+  display: flex;
+  flex-direction: row;
+}
+.redes .termino .derechos{
+  line-height: 30px;
+}
+.contacto{
+
+  width: 225px;
+}
+.termino{
+
+  width: 225px;
+
+}
+.redes{
+
+  width: 225px;
+}
+.derechos{
+
+  width: 225px;
+}
+
+/*-------R E S P O N S I V E -----------*/
+
+@media only screen and (min-width: 280px) and (max-width: 950px){
+
+/*---------   H E A D E R ---------*/
+.encabezado{
+  height: 110px;
+}
+.titulo{
+  font-size: 25px;
+  margin-left: 0px;
+  margin-top: -5px;
+}
+nav{
+  margin-top: -25px;
+  transform: translateX(-30%);
+}
+/*---------   H E A D E R ---------*/
+
+/*---------IMAGEN CENTRAL--------*/
+
+.contenedor{
+  height: 250px;
+}
+.central img{
+  height: 170px;
+}
+
+/*---------IMAGEN CENTRAL--------*/
+
+/*---------IMAGENES  SECUNDARIAS-------*/
+.secundaria{
+  height: 570px;
+  font-size: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.columnauno{
+  height: 250px;
+}
+.columnados{
+  height: 250px;
+}
+.impaisaje{
+  height: 180px;
+  margin-left: -40px;
+}
+
+.imretrato{
+  height: 180px;
+  margin-left: -42px;
+}
+/*---------IMAGENES  SECUNDARIAS-------*/
+
+/*-----------PIE  DE  PAGINA------*/
+.pie-pagina{
+  flex-direction: column;
+}
+}
+
+/*------- R E S P O N S I V E -----------*/
