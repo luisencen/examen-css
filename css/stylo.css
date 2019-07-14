@@ -21,6 +21,7 @@ body{
   background: #5b7989;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
+  animation: 1s slidein;
 }
 .contenido{
   widht: 90%;
@@ -200,3 +201,9 @@ nav{
 }
 
 /*------- R E S P O N S I V E -----------*/
+
+@keyframes slidein{
+    0% {margin-top: 150%;}
+    60%{ margin-top: -5%;}
+    100%{ margin-top: 0;}
+}
